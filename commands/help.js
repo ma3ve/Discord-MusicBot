@@ -34,9 +34,7 @@ module.exports = {
         }help [Command] | Have a nice day!`
       ).setDescription(`${Commands.join("\n")}
   
-  Discord Music Bot Version: v${require("../package.json").version}
-  [✨ Support Server](${client.botconfig.SupportServer
-        }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | By [SudhanPlayz](https://github.com/SudhanPlayz)`);
+  for custom discord bots contact imJune#4257`);
     if (!args[0]) message.channel.send(Embed);
     else {
       let cmd =
