@@ -3,10 +3,10 @@ module.exports = {
   ExpressServer: true,//If you wanted to make the website run or not
   DefaultPrefix: process.env.Prefix || ">", //Default prefix, Server Admins can change the prefix
   Port: 3000, //Which port website gonna be hosted
-  SupportServer: "https://discord.gg/sbySMS7m3v", //Support Server Link
-  Token: process.env.Token || "", //Discord Bot Token
-  ClientID: process.env.Discord_ClientID || "", //Discord Client ID
-  ClientSecret: process.env.Discord_ClientSecret || "", //Discord Client Secret
+  SupportServer: "https://discord.gg/hBV4FaGJ", //Support Server Link
+  Token: process.env.Token || "ODg5NDg0ODMxMzU5MTIzNTA2.YUh7TQ.1anVhLhuDvc9zhLL5CSIm9WnBso", //Discord Bot Token
+  ClientID: process.env.Discord_ClientID || "889484831359123506", //Discord Client ID
+  ClientSecret: process.env.Discord_ClientSecret || "SeKgdR8dlwujGkZlbN-KknV6gNumk--n", //Discord Client Secret
   Scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   CallbackURL: "/api/callback", //Discord OAuth2 Callback URL
   "24/7": false, //If you want the bot to be stay in the vc 24/7
@@ -18,11 +18,11 @@ module.exports = {
   Website: process.env.Website || "http://localhost", //Website where it was hosted at includes http or https || Use "0.0.0.0" if you using Heroku
 
   //Lavalink
-   Lavalink: {
+  Lavalink: {
     id: "Main",
-    host: "(host name or IP)",
-    port: (port),
-    pass: "(password)", 
+    host: process.env.LAVALINK_HOST,
+    port: (80),
+    pass: process.env.LAVALINK_PASS,
     secure: false, // Set this to true if you're self-hosting lavalink on replit.
   },
 
